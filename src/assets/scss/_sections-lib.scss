@@ -1,0 +1,7 @@
+@use "mixin" as *;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(280), 1fr));
+    column-gap: toRem(20);
+    row-gap: toRem(30);
+}

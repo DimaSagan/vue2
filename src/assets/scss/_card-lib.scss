@@ -1,0 +1,7 @@
+.flex-column-grow-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: toRem(50);
+}

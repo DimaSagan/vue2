@@ -1,0 +1,26 @@
+@forward "mixin";
+@forward "sections-lib";
+@forward "card-lib";
+@use "variables" as vars;
+@use "mixin" as *;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,regular,600,800&display=swap");
+[class*="__container"] {
+    max-width: #{vars.$containerWidth}px;
+    margin: 0 auto;
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+}
+
+body {
+    font-family: "Montserrat";
+    background-color: $whiteBg;
+}
+
+.green {
+    color: green;
+}
+
+.lightGray {
+    color: $lightGray;
+}

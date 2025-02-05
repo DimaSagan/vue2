@@ -2,12 +2,13 @@
     <article class="home__container home">
         <section class="title">
             <h2>Tasks</h2>
-            <p>Home work 4</p>
         </section>
-        <section class="home__task-cards">
+        <section class="home__task-cards home__task-cards--grid">
             <TaskCard v-for="(task, i) in tasks" :key="i" :card="task" :taskNumber="i"></TaskCard>
         </section>
     </article>
+
+
 </template>
 <script>
 import TaskCard from '@/components/TaskCard.vue';
@@ -27,14 +28,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.home {
-    &__task-cards {
-        display: flex;
-        flex-direction: column;
-        gap: toRem(20);
-    }
-}
-
 .title {
     h2 {
         font-size: toRem(40);

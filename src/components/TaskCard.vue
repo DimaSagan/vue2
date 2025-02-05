@@ -40,11 +40,17 @@ export default {
 }
 
 .task-card {
+    height: 100%;
     display: flex;
     gap: toRem(25);
     background-color: white;
     padding: toRem(5);
     box-shadow: toRem(3) toRem(3) toRem(4) toRem(3) rgba(0, 0, 0, 0.12);
+
+    @media(max-width: toEm($mobileSmall)) {
+        flex-wrap: wrap;
+    }
+
     // .task-card__img
 
     &__img {
@@ -55,6 +61,8 @@ export default {
             width: 100%;
             scale: (1.12);
         }
+
+
     }
 
     // .task-card__info
@@ -62,6 +70,13 @@ export default {
     &__info {
         flex-basis: 50%;
         @extend .position;
+    }
+
+    &__img,
+    &__info {
+        @media(max-width: toEm($mobileSmall)) {
+            flex-basis: 100%;
+        }
     }
 
     // .task-card__title
@@ -91,6 +106,10 @@ export default {
         font-weight: 800;
         color: $lightGray;
         z-index: 2;
+
+        @media(max-width: toEm($mobileSmall)) {
+            display: none;
+        }
     }
 }
 </style>

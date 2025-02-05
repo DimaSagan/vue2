@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import CommentsComponent from "@/components/CommentsComponent.vue"
-import CommentCard from "@/components/CommentCard.vue";
+import CommentsComponent from "@/components/CommentsComponent/CommentsComponent.vue"
+import CommentCard from "@/components/CommentsComponent/CommentCard.vue";
 import { usersComments } from "@/assets/mock_data/productData";
 export default {
     name: "TaskTwo",

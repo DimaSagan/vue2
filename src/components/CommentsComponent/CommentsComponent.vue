@@ -27,8 +27,8 @@ export default {
             this.clear()
         },
         clear() {
-            this.userName = null,
-                this.message = null
+            this.userName = null
+            this.message = null
         }
     },
 }
@@ -65,7 +65,7 @@ export default {
         font-size: toRem(18);
     }
 
-    &__input {}
+
 
     // .form__message
 
